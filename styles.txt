@@ -1,0 +1,40 @@
+/* Ensure the body takes up the full viewport height */
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+/* Outer container to center its child */
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #e0e0e0; /* Light gray background for contrast */
+}
+
+/* Fixed-size container */
+.container {
+  display: flex;
+  flex-direction: column; /* Stack button and text vertically */
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  padding: 20px;
+  background-color: #f0f0f0;
+  width: 300px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  box-sizing: border-box; /* Include padding and border in width and height */
+}
+
+/* Styling for button and text */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 10px; /* Space between button and text */
+}
+
+p {
+  font-size: 18px;
+  margin: 0; /* Remove default margin */
+}

@@ -1,0 +1,20 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('toggleButton');
+    const text = document.getElementById('text');
+    const container = document.querySelector('.container');
+
+    let isToggled = false;
+
+    button.addEventListener('click', () => {
+        if (isToggled) {
+            button.textContent = 'Change';
+            text.textContent = 'Hi';
+            container.style.backgroundColor = '#f0f0f0';
+        } else {
+            button.textContent = 'Revert';
+            text.textContent = 'Apple';
+            container.style.backgroundColor = '#add8e6'; // Light blue color
+        }
+        isToggled = !isToggled;
+    });
+});
